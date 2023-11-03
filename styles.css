@@ -1,1 +1,187 @@
+body {
+    background-color: rgb(236, 125, 7);
+    height: 100vw;
+}
 
+.navigation {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(236, 125, 7);
+    ;
+}
+
+.nav-head {
+    padding: 14px;
+    font-family: "Tangerine", cursive;
+}
+
+.mealLogo {
+    padding-top: 2.5px;
+    margin: 12px;
+    width: 60px;
+    height: 60px;
+}
+
+.input-div {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+input,
+select,
+#generate-Btn {
+    border-radius: 5px;
+    width: 180px;
+    height: 39px;
+    border-color: rgba(0, 0, 0, 0.089);
+    opacity: 0.8;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    border-radius: 320px;
+    padding: 8px;
+    background-color: #ebecf0;
+    text-shadow: 1px 1px 0 #fff;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#generate-Btn {
+    background-color: rgb(236, 125, 7);
+}
+
+form {
+    margin-top: 60px;
+}
+
+.cards-div {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#meal-card {
+    border-radius: 20px;
+    border: black;
+    background-color: rgb(236, 125, 7);
+}
+
+#meal-card:hover {
+    transform: scale(1.03);
+    transition: 2s;
+    cursor: pointer;
+}
+
+.data {
+    justify-content: center;
+}
+
+#erorr {
+    text-align: center;
+    height: 18px;
+    color: rgba(255, 55, 0, 0.952);
+}
+
+.card-heading {
+    color: rgb(236, 125, 7);
+    text-align: center;
+    font-size: 30px;
+}
+
+#meal-no,
+#colories {
+    color: white;
+    text-align: center;
+}
+
+.meal-img {
+    width: auto;
+    height: 250px;
+    border-top-right-radius: 55px;
+    border-top-left-radius: 30px;
+}
+
+.card-body {
+    border-radius: 13px;
+    display: grid;
+    background-color: rgb(236, 125, 7);
+}
+
+.recipe-div {
+    width: 82%;
+    margin-top: 20px;
+    background-color: rgb(222, 226, 226);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.recipe-Maindiv {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#recipe-name {
+    height: 20px;
+    font-size: medium;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#time {
+    color: white;
+    text-align: center;
+    font-weight: 800;
+}
+
+#lunch-recipe,
+#bf-recipe,
+#dinner-recipe {
+    background-color: rgba(234, 175, 57, 0.848);
+}
+
+.ingredients {
+    margin-top: 10px;
+    color: rgb(236, 125, 7);
+}
+
+.ingredients-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#ingredients-para {
+    margin: 25px;
+    font-size: medium;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 550px) {
+    .input-div {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+    .input {
+        width: 230px;
+    }
+    .ingredients,
+    .quantity {
+        font-size: 15px;
+    }
+}

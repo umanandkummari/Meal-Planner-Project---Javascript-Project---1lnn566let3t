@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--Heading section-->
+    <section class="navigation">
+        <img src="./images/mealLogo.png" class="mealLogo" />
+        <h1 class="nav-head">Meal Planner</h1>
+    </section>
+
+    <!--Form Section-->
+    <form class="user-form">
+        <div class="div-form">
+
+            <div class="input-div">
+                <div>
+                    <div class="data"><input class="input" id="height" type="number" placeholder="Enter Height(in cm)" /></div>
+                    <div id="erorr" class="height-error"></div>
+                </div>
+
+                <div>
+                    <div class="data"><input class="input" id="weight" type="number" placeholder="Enter Weight(in kg)" /></div>
+                    <div id="erorr" class="weight-error"></div>
+                </div>
+
+                <div>
+                    <div class="data"><input class="input" id="age" type="number" placeholder="Enter Age" /></div>
+                    <div id="erorr" class="age-error"></div>
+                </div>
+
+            </div>
+
+
+
+            <div class="input-div">
+                <div>
+                    <div class="data"><select class="input-gender" id="gender">
+                            <option value="gender" hidden disabled selected>Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                         </select>
+                    </div>
+                    <div id="erorr" class="gender-error"></div>
+                </div>
+
+                <div>
+                    <div class="data">
+                        <select class="input-activity" id="activityLevel">
+                            <option value="ActivityLevel" hidden disabled selected>ActivityLevel</option>
+                            <option value="light">Light</option>
+                            <option value="Moderate">Moderate</option>
+                           <option value="Extreme">Extreme</option>
+                        </select>
+                    </div>
+                    <div id="erorr" class="activity-errorr"></div>
+                </div>
+            </div>
+
+
+            <div class="input-div">
+                <button id="generate-Btn" type="submit">Generate Meals</button>
+            </div>
+
+        </div>
+
+    </form>
+
+
+    <!--Meal Card Section-->
+
+    <div class="cards-div" hidden>
+        <!--Breakfast Card-->
+        <div class="breakfast-card">
+            <h1 class="card-heading">Breakfast</h1>
+            <div class="card" id="meal-card" style="width: 18rem;">
+                <img src="" class="card-img-top meal-img bf-img" alt="...">
+                <div id="recipe-name" class="bf-name">wegw</div>
+                <div class="card-body">
+                    <h5 id="meal-no">Meal 1</h5>
+                    <p id="time" class="bf-prep-time">secs</p>
+                    <button type="button" id="bf-recipe" class="btn active dietBtn" data-bs-toggle="button" aria-pressed="true">Get B-F Recipe</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Lunch Card-->
+        <div class="lunch-card">
+            <h1 class="card-heading">Lunch</h1>
+            <div class="card" id="meal-card" style="width: 18rem;">
+                <img src="" class="card-img-top meal-img lunch-img" alt="...">
+                <div id="recipe-name" class="lunch-name">fswe</div>
+                <div class="card-body">
+                    <h5 id="meal-no">Meal 2</h5>
+                    <p id="time" class="l-prep-time">secs</p>
+                    <button type="button" id="lunch-recipe" class="btn active dietBtn" data-bs-toggle="button" aria-pressed="true">Get Lunch Recipe</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Dinner Card-->
+        <div class="dinner-card">
+            <h1 class="card-heading">Dinner</h1>
+            <div class="card" id="meal-card" style="width: 18rem;">
+                <img src="" class="card-img-top meal-img dinner-img" alt="...">
+                <div id="recipe-name" class="dinner-name">kvkvh</div>
+                <div class="card-body">
+                    <h5 id="meal-no">Meal 3</h5>
+                    <p id="time" class="d-prep-time">secs dinner</p>
+                    <button type="button" id="dinner-recipe" value="dinner" class="btn active dietBtn" data-bs-toggle="button" aria-pressed="true">Get Dinner Recipe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Recipe Section-->
+
+    <div class="recipe-Maindiv" hidden>
+        <div class="recipe-div">
+            <!--Ingredients Section-->
+            <div class="ingredients-div">
+                <h1 class="ingredients">INGREDIENTS</h1>
+
+
+                <p id="ingredients-para"></p>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <script src="./App.js"></script>
+
+
+</body>
+
+</html>
